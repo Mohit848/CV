@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="Images/man.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Mohit Mishra</title>
+</head>
+
+<body onload="typist()">
+  <div class="side-pane">
+    
+  </div>
+  <div class="top-container">
+    <h1 class="myName">I'm Mohit.</h1>
+    <h2 class="devloper">A <span class="Dev">Web</span> developer</h2>
+    <p id="typing-bio"></p>
+  </div>
+  <div class="education-container">
+    <h2>My Education</h2>
+    <div class="edu-box">
+      <img src="Images/school.png" alt="school image">
+      <p><strong>10 + 2</strong></p>
+      <p>(2014-2015)</p>
+      <p>Govt Jiwaji Rao Hr. Sec. School, Gwalior</p>
+    </div>
+    <div class="edu-box">
+      <img src="Images/graduation.png" alt="college image">
+      <p><strong>Bachelors in Technology (CSE)</strong></p>
+      <p>(2016-2020)</p>
+      <p>Lovely Professional University, Punjab</p>
+    </div>
+    <div class="edu-box">
+      <img src="Images/office-building.png" alt="company image">
+      <p><strong>Automation Engineer in Test</strong></p>
+      <p>(2020-Present)</p>
+      <p>Cognizant Technology Solutions</p>
+    </div>
+  </div>
+  <div class="skills-container">
+    <h2>Skills that I offer!</h2>
+    <div class="skills-box">
+      <img src="Images/graphic-design.png" alt="frontend">
+      <hr>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+    <div class="skills-box">
+      <img src="Images/development.png" alt="backend">
+      <hr>
+      <ul>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>Git & Github</li>
+        <li>OAuth 2.0</li>
+        <li>Passport local Auth</li>
+        <li>Deployment</li>
+        <li>Rest API</li>
+      </ul>
+    </div>
+    <div class="skills-box">
+      <img src="Images/database-storage.png" alt="database">
+      <hr>
+      <ul>
+        <li>MongoDB Local</li>
+        <li>MongoDB Atlas</li>
+        <li>Mongoose</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+    <img id="skill-img" src="Images/1.png">
+  </div>
+  
+  <div class="project-container">
+    <h2>My Hands-On</h2>
+    <div class="projects">
+        <div class="project-col">
+            <h3>Drum Kit</h3><p>Uses HTML-CSS-JS</p>
+            <h3>Simon Game</h3><p>Uses HTML-CSS-JS</p>
+            <h3>Dice Game</h3><p>Uses HTML-CSS -JS</p>
+            <h3>Weather App</h3><p>Uses HTML-CSS-JS-API</p>
+        </div>
+        <div class="project-col">
+            <h3>Quotes API</h3><p>Uses Node-Express</p>
+            <h3>To-Do List</h3><p>Uses HTML-CSS-JS-Node-Express-MongoDB</p>
+            <h3>Blog Website</h3><p>Uses HTML-CSS-JS-Node-Express-MongoDB</p>
+            <h3>Secrets App</h3><p>Uses HTML-CSS-JS-Node-Express-MongoDB-OAuth2.0</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="CTA-container">
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you think you can bear my music... ;)</h3>
+        <div class="button-div">
+          <a class="btn" href="mailto:mmishra848@email.com">CONTACT ME</a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/mmishra848/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/mmishra848">Twitter</a>
+      <a class="footer-link" href="tel:+918823071110">Phone (+918823071110)</a>
+      <p class="copyright-text">© 2022 Mohit Mishra 😊</p>
+    </div>
+    <script>
+      var i=0;
+      var str = "I'm a full stack web developer. Also worked as automation engineer in test. I like creating beautiful and aesthetic websites and excited to build awesome projects!";
+      function typist()
+      {
+        if(i<str.length)
+        {
+          document.getElementById("typing-bio").textContent += str.charAt(i++);
+          setTimeout(typist, 13);
+        }
+      }
+      var j=1;
+      function changeImage(){
+      if(j>7)
+      {
+          j=1;
+      }
+      document.getElementById("skill-img").setAttribute("src", "Images/"+j+".png");
+      j++;
+      
+      }
+      setInterval(changeImage, 2000);
+    </script>
+</body>
+</html>
