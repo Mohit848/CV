@@ -93,7 +93,7 @@ ul{
     margin-bottom: 40px;
 }
 .top-container {
-    background-image: url("/Users/mohit_mishra/Desktop/PersonalSitewithCSS/Images/mountain.jpg");
+    background-image: url("Images/mountain.jpg");
     background-size: cover;
     height: 650px;
     position: relative;
